@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of books -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    android:focusable="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D"
+            tools:text="Hello World!"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/euro"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD"
+            tools:text="Hello World!"
+            android:layout_centerVertical="true"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD"
+            android:text="€"
+            android:paddingLeft="6dp"
+            android:layout_centerVertical="true"
+            android:focusable="false"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD"
+            android:text="Currently in stock:"
+            android:paddingLeft="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD"
+            tools:text="Hello World!"
+            android:paddingLeft="6dp"
+            android:layout_toRightOf="@id/stock"
+            android:layout_centerVertical="true"
+            android:focusable="false"/>
+
+        <Button
+            android:id="@+id/saleButton"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="Sale"
+            android:layout_alignParentRight="true"
+            android:focusable="false"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

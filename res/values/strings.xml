@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Books</string>
+    <string name="title">Product Name</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="supplier_name">Supplier Name</string>
+    <string name="supplier_phone_number">Supplier Phone Number</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="error_saving_data">Error with saving book data</string>
+    <string name="data_saved">Data saved.</string>
+    <string name="insertion_failed">Failed to insert row for</string>
+    <string name="add_product">Add a Product</string>
+    <string name="edit_product">Edit a Product</string>
+    <string name="error_saving">Error with saving data</string>
+    <string name="error_updating">Error with updating</string>
+    <string name="update_successful">Update successful</string>
+    <string name="delete_books_failed">Error with deleting</string>
+    <string name="delete_books_successful">All books deleted</string>
+    <string name="editor_delete_book_failed">Error with deleting the book</string>
+    <string name="editor_delete_book_successful">Book deleted</string>
+    <string name="discard_changes_question">Discard your changed and quit editing?</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="discard">Discard</string>
+    <string name="delete_book_question">Delete this book?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="empty_view_title_text">Database is empty. Start adding books.</string>
+</resources>

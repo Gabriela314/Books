@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".EditActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_top"
+            android:text="Book"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_top"
+            android:text="@string/price"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_top"
+            android:layout_weight="1"
+            android:text="@string/quantity"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_top"
+            android:layout_weight="1"
+            android:text="@string/supplier_name"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_top"
+            android:layout_weight="1"
+            android:text="Supplier Phone"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_title"
+            style="@style/EditFieldStyle"
+            android:hint="@string/title"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/edit_price"
+            style="@style/EditFieldStyle"
+            android:hint="@string/price"
+            android:inputType="number"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/plusButton"
+                android:onClick="addQuantity"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="+" />
+
+            <EditText
+                android:id="@+id/edit_quantity"
+                style="@style/EditFieldStyle"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:hint="@string/quantity"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/minusButton"
+                android:onClick="decreaseQuantity"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="-">
+
+            </Button>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_supplier_name"
+            style="@style/EditFieldStyle"
+            android:hint="@string/supplier_name"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/edit_supplier_phone"
+                style="@style/EditFieldStyle"
+                android:hint="Supplier Phone"
+                android:inputType="phone"
+                android:textSize="@dimen/text_size" />
+
+            <ImageButton
+                android:id="@+id/dial"
+                android:onClick="dialSupplier"
+                android:layout_width="36dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_phone_black_48"
+                style="?android:attr/borderlessButtonStyle" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
